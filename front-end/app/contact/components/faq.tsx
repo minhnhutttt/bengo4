@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import Title from './title'
+import Title from './Title'
 import Image from "next/image";
 
 type FaqItem = {
@@ -17,7 +17,7 @@ const defaultFaqs: FaqItem[] = []
 export default function Faq({ faqs = defaultFaqs, className = '' }: FaqProps) {
   return (
     <div className={className}>
-      <Title className='mb-[15px]'>
+      <Title>
         よくあるお問い合わせ
       </Title>
       <ul className="mt-4">
@@ -33,9 +33,9 @@ export default function Faq({ faqs = defaultFaqs, className = '' }: FaqProps) {
         ))}
       </ul>
       <div className="mt-4 text-right">
-        <Link href="/faq" className="text-sm text-gray-600 hover:underline inline-flex items-center gap-1">
+        <Link href="/faq" className="text-[14px] font-bold text-[#005ebb] hover:opacity-80 transition inline-flex items-center gap-1">
           もっと見る
-          <span className="w-2 h-2 bg-orange-500 rounded-full"></span>
+          <Image src="/icons/icon_arrow_right_middle.png" alt="もっと見る" width={13} height={13} />
         </Link>
       </div>
     </div>

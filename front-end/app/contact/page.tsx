@@ -1,9 +1,10 @@
 import Container from "@/components/layout/Container";
 import Breadcrumb from "@/components/common/Breadcrumb";
-import Sidebar from "./components/sidebar";
-import Link from "next/link";
-import Title from "./components/title";
-import Faq from "./components/faq";
+import Sidebar from "./components/Sidebar";
+import Title from "./components/Title";
+import Faq from "./components/Faq";
+import OfficeHours from "./components/OfficeHours";
+import Form from "./components/Form";
 
 export default function Contact() {
   const faqs = [
@@ -14,11 +15,14 @@ export default function Contact() {
   return (
     <main className="">
       <Breadcrumb items={[{ label: 'お問い合わせ' }]} />
-
-      <Container sidebar={<Sidebar />}>
-        <Title variant={1} className="mb-[30px]">お問い合わせ</Title>
-        <Faq faqs={faqs} />
-      </Container>
+      <div className="mb-12">
+        <Container sidebar={<Sidebar />}>
+          <Title variant={1} className="mb-[30px]">お問い合わせ</Title>
+          <Faq faqs={faqs} />
+          <OfficeHours />
+          <Form />
+        </Container>
+      </div>
     </main>
   )
 }
