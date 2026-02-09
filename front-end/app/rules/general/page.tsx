@@ -1,11 +1,12 @@
 import Link from "next/link";
+import PageTitle from "@/components/common/PageTitle";
 
 export default function GeneralRule() {
 
   return (
     <main className="">
       <div className="w-full max-w-[980px] mx-auto px-2.5 my-8 text-[#222]">
-        <h1 className="text-[25px] font-bold pb-[10px] border-b border-[#ddd] mb-8">一般利用規約</h1>
+        <PageTitle>一般利用規約</PageTitle>
         <div className="w-full text-[14px] leading-[1.6]">
 
           <div className="space-y-2 p-5 pt-0 mb-3">

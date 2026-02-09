@@ -1,11 +1,12 @@
 import Link from "next/link";
+import PageTitle from "@/components/common/PageTitle";
 
 export default function Privacy() {
 
   return (
     <main className="">
       <div className="w-full max-w-[980px] mx-auto px-2.5 my-8 text-[#222]">
-        <h1 className="text-[25px] font-bold pb-[10px] border-b border-[#ddd] mb-8">プライバシーの考え方</h1>
+        <PageTitle>プライバシーの考え方</PageTitle>
         <div className="w-full text-[14px] leading-[1.6]">
 
           <h2 className="py-2 px-4 font-bold bg-[#eaeaea]">適用範囲について</h2>
