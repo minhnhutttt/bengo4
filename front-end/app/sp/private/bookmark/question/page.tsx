@@ -12,7 +12,7 @@ export default function Question() {
   return (
     <main>
       <div className="w-full max-w-[980px] mx-auto px-2.5 mt-5 md:mt-8 mb-16 text-[#222]">
-        <PageTitle>閲覧履歴</PageTitle>
+        <PageTitle>お気に入り</PageTitle>
 
         {/* Tab Navigation */}
         <ul className="flex border-b-[1px] border-[#ccc] px-[10px] font-bold text-[14px]">
@@ -21,7 +21,7 @@ export default function Question() {
           </li>
           <li className="flex-1 p-[10px] pr-0 pt-0 mb-[-1px]">
             <Link
-              href="/sp/private/view/lawyer/"
+              href="/sp/private/bookmark/lawyer/"
               className="text-center border border-[#ccc] block p-[6px] hover:bg-gray-50 transition-colors rounded-[3px]"
             >
               弁護士
@@ -31,7 +31,27 @@ export default function Question() {
 
         {/* Count Display */}
         <div className="text-center py-4 text-[#222] text-[14px]">
-          <span className="text-[#ff9900] text-[17px]">0</span>件 / 50件
+          <span className="text-[#ff9900] text-[17px]">0</span>件 / 0件
+        </div>
+
+        {/* Booking Billing */}
+        <div className="mx-2.5 mb-5">
+          <h3 className="flex flex-col items-center text-center text-[12px]">
+            <span className="text-[#222]">
+              プレミアムサービスに登録すると
+            </span>
+            <span className="text-[17px] font-bold text-[#733c00]">
+              <span className="text-[#f90]">法律相談</span><span className="text-[12px]">を</span>お気に入り<span className="text-[12px]">に</span>保存<span className="text-[12px]">できます。</span>
+            </span>
+          </h3>
+          <Image src="/images/bookmarkNobilling_img.avif" alt="" width={207} height={124} className="mt-5 mx-auto" />
+          <Link
+            href="#"
+            className="w-full max-w-[400px] py-2.5 mt-5 mx-auto text-white font-bold rounded bg-[linear-gradient(180deg,#ffb415_0%,#ff9600_50%,#ff8500_50%,#ffa600_100%)] border border-[#d38947] [text-shadow:0_-1px_1px_#d38947] hover:opacity-90 flex items-center justify-center gap-2 transition"
+          >
+            <span><Image src="/icons/icon_premium.png" alt="icon premium" width={15} height={22} /></span>
+            絞り込み検索する
+          </Link>
         </div>
 
         {/* Search Section */}
