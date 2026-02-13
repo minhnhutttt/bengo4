@@ -15,8 +15,8 @@ type BreadcrumbProps = {
 
 export default function Breadcrumb({ items, className = '' }: BreadcrumbProps) {
   return (
-    <div className='border-b border-[#e9e5e4] mb-[30px]'>
-      <nav aria-label="Breadcrumb" className={`w-full max-w-[980px] mx-auto flex items-center text-xs py-[14px] px-2.5 ${className}`}>
+    <div className={`border-b border-[#e9e5e4] mb-[30px] ${className}`}>
+      <nav aria-label="Breadcrumb" className="w-full max-w-[980px] mx-auto flex items-center text-xs py-[14px] px-2.5">
           <ul className="flex items-center flex-wrap gap-1">
 
             <li className="flex items-center">
